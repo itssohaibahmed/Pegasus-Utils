@@ -3,6 +3,7 @@ package dev.pegasus.utils.extensions.ui
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.activity.OnBackPressedCallback
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
@@ -122,6 +123,17 @@ fun Fragment.launchWhenResumeWithDelay(delay: Long = 300, block: () -> Unit) {
     withDelay(delay) {
         launchWhenResumed { block.invoke() }
     }
+}
+
+
+/* ---------------------------------------------- BackPress ---------------------------------------------- */
+
+fun Fragment.onBackPressedDispatcher(callback: () -> Unit) {
+    activity?.onBackPressedDispatcher?.addCallback(this, object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            callback.invoke()
+        }
+    })
 }
 
 /* ----------------------------------------- Keyboard -----------------------------------------*/

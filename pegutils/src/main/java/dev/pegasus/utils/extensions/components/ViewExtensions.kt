@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.Interpolator
+import androidx.core.graphics.createBitmap
 import androidx.core.view.marginBottom
 import androidx.core.view.marginLeft
 import androidx.core.view.marginRight
 import androidx.core.view.marginTop
-import androidx.core.graphics.createBitmap
 
 /**
  * @Author: SOHAIB AHMED
@@ -26,6 +26,8 @@ fun View.gone() = run { visibility = View.GONE }
 fun View.visible() = run { visibility = View.VISIBLE }
 
 fun View.invisible() = run { visibility = View.INVISIBLE }
+
+fun View.remove() = run { (this.parent as? ViewGroup)?.removeView(this) }
 
 infix fun View.visibleIf(condition: Boolean) =
     run { visibility = if (condition) View.VISIBLE else View.GONE }
@@ -42,7 +44,6 @@ fun View.getCornerRadiusInPixel(radius: Float): Int {
     val cornerRadiusDP = (radius * (temp.toFloat() / 500))
     return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, cornerRadiusDP, resources.displayMetrics).toInt()
 }
-
 
 fun View.getBitmap(): Bitmap? {
     try {

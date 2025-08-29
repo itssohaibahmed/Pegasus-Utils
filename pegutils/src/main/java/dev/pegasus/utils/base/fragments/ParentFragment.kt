@@ -25,12 +25,15 @@ abstract class ParentFragment<T : ViewBinding>(val bindingFactory: (LayoutInflat
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onViewCreated()
+        initObservers()
     }
 
     /**
      *  @since : Start code...
      */
     abstract fun onViewCreated()
+
+    open fun initObservers() {}
 
     override fun onDestroyView() {
         super.onDestroyView()

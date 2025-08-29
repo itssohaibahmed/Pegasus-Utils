@@ -16,7 +16,6 @@ fun Int.isValidPosition(list: List<Any>): Boolean {
     return this != RecyclerView.NO_POSITION && list.isNotEmpty() && this < list.size
 }
 
-
 /**
  * Converts an [Int] value in dp (density-independent pixels) to px (pixels).
  *
