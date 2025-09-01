@@ -16,11 +16,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7435b568-ec8e-49aa-b01e-b00a8106f1bf" name="Changes" comment="PegUtils">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7435b568-ec8e-49aa-b01e-b00a8106f1bf" name="Changes" comment="PegUtils&#10;- Added `onBackPressedDispatcher` extension function to FragmentExtensions.kt&#10;- Added `initObservers` function to ParentFragment.kt&#10;- Added `remove` extension function to ViewExtensions.kt&#10;- Updated `core-ktx` version to `1.17.0`">
+      <change afterPath="$PROJECT_DIR$/pegutils/src/main/java/dev/pegasus/utils/base/fragments/BasePermissionAudioFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pegutils/src/main/java/dev/pegasus/utils/base/fragments/BasePermissionImageFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pegutils/src/main/java/dev/pegasus/utils/base/fragments/BasePermissionVideoFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pegutils/src/main/java/dev/pegasus/utils/base/fragments/PermissionFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/pegutils/src/main/java/dev/pegasus/utils/base/fragments/PermissionFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,28 +87,27 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android.gradle.sync.needed": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Volumes/Sohaib - Data/Work/Projects/Android/Github/PegasusUtils",
-    "project.structure.last.edited": "SDK Location",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Sohaib - Data/Work/Projects/Android/Github/PegasusUtils&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pegutils/src/main/res/drawable" />
@@ -121,6 +121,7 @@
       <recent name="dev.pegasus.utils.base.activities" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="dev.pegasus.utils.base.fragments" />
       <recent name="dev.pegasus.utils.dialogs" />
       <recent name="dev.pegasus.utils.managers" />
     </key>
@@ -310,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753906399177</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="PegUtils&#10;- Added `onBackPressedDispatcher` extension function to FragmentExtensions.kt&#10;- Added `initObservers` function to ParentFragment.kt&#10;- Added `remove` extension function to ViewExtensions.kt&#10;- Updated `core-ktx` version to `1.17.0`">
+      <option name="closed" value="true" />
+      <created>1756492077322</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756492077322</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +336,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="PegUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="PegUtils" />
+    <MESSAGE value="PegUtils&#10;- Added `onBackPressedDispatcher` extension function to FragmentExtensions.kt&#10;- Added `initObservers` function to ParentFragment.kt&#10;- Added `remove` extension function to ViewExtensions.kt&#10;- Updated `core-ktx` version to `1.17.0`" />
+    <option name="LAST_COMMIT_MESSAGE" value="PegUtils&#10;- Added `onBackPressedDispatcher` extension function to FragmentExtensions.kt&#10;- Added `initObservers` function to ParentFragment.kt&#10;- Added `remove` extension function to ViewExtensions.kt&#10;- Updated `core-ktx` version to `1.17.0`" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
@@ -344,7 +354,7 @@
         </entry>
         <entry key="dev.pegasus.utils.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1752766269768" />
+            <CheckInfo lastCheckTimestamp="1756492008046" />
           </value>
         </entry>
       </map>
